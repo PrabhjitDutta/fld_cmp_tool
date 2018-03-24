@@ -17,7 +17,7 @@ You have the option to:
 
 The synatax of this function is:
 
- 'fld_cmp.same(address1, address2)'
+        "fld_cmp.same(address1, address2)"
 
 This function accepts addresses of 2 directories and returns the similar folders and files in those directories.
 
@@ -25,7 +25,7 @@ This function accepts addresses of 2 directories and returns the similar folders
 
 The synatax of this function is:
 
- 'fld_cmp.diff(address1, address2)'
+        "fld_cmp.diff(address1, address2)"
 
 This function accepts addresses of 2 directories and returns the different folders and files in those directories.
 
@@ -33,6 +33,6 @@ This function accepts addresses of 2 directories and returns the different folde
 
 The synatax of this function is:
 
- 'fld_cmp.sync(address1, address2)'
+        "fld_cmp.sync(address1, address2)"
 
 This function accepts addresses of 2 directories and syncs the two directories.
