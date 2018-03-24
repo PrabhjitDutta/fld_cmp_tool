@@ -1,4 +1,16 @@
 def same(path1, path2):
+
+    """
+        Compare directories for similar files/folders.
+
+        :argument path1: Address of first directory.
+
+        :argument path2: Address of second directory.
+
+        :return: list of similar files/folders.
+
+    """
+
     import os
 
     count = 0
@@ -13,10 +25,23 @@ def same(path1, path2):
                 file_list2.pop(file_list2.index(j))
                 count += 1
                 continue
+
     return return_list
 
 
 def diff(path1, path2):
+
+    """
+        Compare directories for different files/folders.
+
+        :argument path1: Address of first directory.
+
+        :argument path2: Address of second directory.
+
+        :return: list of different files/folders.
+
+    """
+
     import os
 
     count = 0
@@ -36,10 +61,21 @@ def diff(path1, path2):
     for i in file_list2:
         return_list.append(i)
         temp += 1
+
     return return_list
 
 
 def sync(path1, path2):
+
+    """
+        Syncs two directories.
+
+        :argument path1: Address of first directory.
+
+        :argument path2: Address of second directory.
+
+    """
+
     import os
 
     count = 0
