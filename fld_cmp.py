@@ -1,25 +1,27 @@
-def same_files(path1, path2):
+def same(path1, path2):
     import os
 
     count = 0
     file_list1 = os.listdir(path1)
     file_list2 = os.listdir(path2)
+    return_list = []
 
     for i in file_list1:
         for j in file_list2:
             if i == j:
-                print(i)
+                return_list.append(i)
                 file_list2.pop(file_list2.index(j))
                 count += 1
                 continue
-    print("\n{} Similar files/folder Found".format(count))
+    return return_list
 
 
-def diff_files(path1, path2):
+def diff(path1, path2):
     import os
 
     count = 0
     temp = 0
+    return_list = []
     file_list1 = os.listdir(path1)
     file_list2 = os.listdir(path2)
 
@@ -29,15 +31,15 @@ def diff_files(path1, path2):
                 count += 1
                 file_list2.pop(file_list2.index(j))
         if count == 0:
-            print(i)
+            return_list.append(i)
             temp += 1
     for i in file_list2:
-        print(i)
+        return_list.append(i)
         temp += 1
-    print("\n{} Different files/folders Found".format(temp))
+    return return_list
 
 
-def sync_files(path1, path2):
+def sync(path1, path2):
     import os
 
     count = 0
